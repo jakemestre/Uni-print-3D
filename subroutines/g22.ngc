@@ -31,6 +31,6 @@ o100 else if [#<_selected_tool> EQ  9]
     #501=#<_ini[EXTRUDER_9]RETRACT_LENGTH>
     #502=#<_ini[EXTRUDER_9]RETRACT_VEL>
 o100 endif
-G1 A[#500+#501] F#502
+G1 A[#500-#501] F[#502*60]
 G92 A#500
 o<g22> end sub
